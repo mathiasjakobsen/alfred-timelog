@@ -185,7 +185,7 @@ def insert_work(task_id, then, now):
             duration = duration,
             then = then.isoformat(),
             now = now.isoformat(),
-            description = 'I did some work. Ugh.',
+            description = '',
             expires = user.token.expires,
             hash = user.token.hash
         )
