@@ -8,7 +8,7 @@ import argparse
 import datetime
 import uuid
 
-from workflow import Workflow3, ICON_WARNING, web, PasswordNotFound
+from workflow import Workflow3, web, PasswordNotFound
 from workflow.notify import notify
 
 HELP_URL = 'https://github.com/mathiasjakobsen/alfred-timelog/issues'
@@ -26,7 +26,7 @@ def login(query):
     token = fetch_token(username, password)
 
     if not token:
-        notify(u'(╯°□°）╯︵ ', 'Invalid credentials!', icon=ICON_ERROR)
+        notify(u'(╯°□°）╯︵ ', 'Invalid credentials!', 'Basso')
         return 1
 
     wf.save_password('password', password)
@@ -131,7 +131,7 @@ def search(query):
     items = wf.filter(wf.fold_to_ascii(query), get_tasks(), filtr)
 
     if not items:
-        wf.add_item('No matches', icon=ICON_WARNING)
+        wf.add_item(u'No matches (╯°□°）╯︵ ┻━┻', 'Try changing your search query..')
 
     for item in items:
         wf.add_item(title = item.name,
@@ -283,7 +283,7 @@ def main(wf):
         return login(args.login)
 
     if not get_user():
-        wf.add_item(title="Not logged in! Please run 'timelog login'", valid=False, icon=ICON_WARNING)
+        wf.add_item(title="Not logged in! Please run 'timelog login'", valid=False)
         wf.send_feedback()
         return 1
 
