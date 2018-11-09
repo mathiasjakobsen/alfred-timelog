@@ -9,7 +9,7 @@ Start tracking time in [TimeLog](https://www.timelog.com/en/) with a quick `tl` 
 1. [Download](https://github.com/mathiasjakobsen/alfred-timelog/releases) latests release
 2. Double-click the `timelog.alfredworkflow` package to install
 3. Run the `timelog login` command, with your TimeLog credentials, to log in
-4. Start tracking time, without Microsoft Silverlight. Great success:tada:
+4. Start tracking time, without Microsoft Silverlight. Great success :tada:
 
 ### Commands
 
