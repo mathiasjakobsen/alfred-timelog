@@ -28,6 +28,8 @@ Start tracking time in [TimeLog](https://www.timelog.com/en/) with a quick `tl` 
 - [ ] List completed work of the day, when query is empty
 - [ ] Optionally accept a decription, when completing a task
 - [ ] Ammend previous work
+- [ ] Handle HTTP errors, on POSTs
+- [ ] Verify token expiry, instead of refetching it every hour
 
 ### Credits
 
