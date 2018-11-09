@@ -29,6 +29,10 @@ Start tracking time in [TimeLog](https://www.timelog.com/en/) with a quick `tl` 
 - [ ] Optionally accept a decription, when completing a task
 - [ ] Ammend previous work
 
+### Credits
+
+This workflow uses the great Python [Alfred-Workflow](https://github.com/deanishe/alfred-workflow) library, by [@deanishe](https://github.com/deanishe).
+
 ### Disclaimer
 
 This is an unofficial client for the [TimeLog Project APIs](https://api.timelog.com/), and it's not affiliated with TimeLog A/S. Use at your own risk. If you are looking for the offical SDKs, they can be found here [`TimeLog/TimeLogApiSdk`](https://github.com/TimeLog/TimeLogApiSdk).
