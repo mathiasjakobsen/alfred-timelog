@@ -22,6 +22,13 @@ Start tracking time in [TimeLog](https://www.timelog.com/en/) with a quick `tl` 
 
 - `tl [query]` will fuzzy search your tasks. Hit enter on a task to start tracking time on that task.
 
+### To-Do
+
+- [x] Trigger macOS *Notification Center* notificaitons, for better UI feedback
+- [ ] List completed work of the day, when query is empty
+- [ ] Optionally accept a decription, when completing a task
+- [ ] Ammend previous work
+
 ### Disclaimer
 
 This is an unofficial client for the [TimeLog Project APIs](https://api.timelog.com/), and it's not affiliated with TimeLog A/S. Use at your own risk. If you are looking for the offical SDKs, they can be found here [`TimeLog/TimeLogApiSdk`](https://github.com/TimeLog/TimeLogApiSdk).
